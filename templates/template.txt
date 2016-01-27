@@ -1,0 +1,11 @@
+                <%include file="header.html"/>
+                % for issue in issues:
+					<tr>
+						<td>${issue.author}</td>
+						<td>${issue.short_path}</td>
+						<td>${issue.line}</td>
+						<td>${issue.description}</td>
+						<td>${issue.code}</td>
+					</tr>
+				% endfor
+				<%include file="footer.html"/>
